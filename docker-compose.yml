@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    container_name: tereaiqos.ru # меняем на имя проекта
+    restart: always
+    environment:
+      - NODE_ENV=production
+      - VIRTUAL_HOST=tereaiqos.ru # домен сайта
+      - LETSENCRYPT_HOST=tereaiqos.ru # домен для SSL
+      - LETSENCRYPT_EMAIL=qwe@email.com
+    networks:
+      - web
+
+networks:
+  web:
+    external: true

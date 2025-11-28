@@ -33,8 +33,8 @@ COPY --from=builder /app/public ./public
 
 # Production ENV
 ENV NODE_ENV=production
-ENV PORT=3000
+ENV PORT=3006
 
-EXPOSE 3000
+EXPOSE 3006
 
 CMD ["npm", "start"]

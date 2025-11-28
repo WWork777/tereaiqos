@@ -860,11 +860,11 @@ ${formattedCart}
                   style={{ width: "auto" }}
                 />
 
-                <Link
-                  href="/policy"
-                  style={{ color: "grey", textDecoration: "underline" }}
-                >
-                  Даю согласие на обработку своих персональных данных
+                <Link href="/policy" style={{ color: "grey" }}>
+                  Даю согласие на обработку своих{" "}
+                  <span style={{ textDecoration: "underline" }}>
+                    персональных данных
+                  </span>
                 </Link>
               </label>
               {errors.privacyConsent && (

@@ -7,9 +7,9 @@ services:
     restart: always
     environment:
       - NODE_ENV=production
-      - VIRTUAL_HOST=tereaiqos.ru # домен сайта
-      - LETSENCRYPT_HOST=tereaiqos.ru # домен для SSL
-      - LETSENCRYPT_EMAIL=qwe@gmail.com
+      - VIRTUAL_HOST=tereaiqos.ru, www.tereaiqos.ru
+      - LETSENCRYPT_HOST=tereaiqos.ru, www.tereaiqos.ru
+      - REDIRECT_www.tereaiqos.ru=tereaiqos.ru
     networks:
       - web
     volumes:

@@ -9,22 +9,47 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2️⃣ Setup Docker Buildx (для кэширования слоёв)
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 3️⃣ Install SSH key
       - name: Install SSH key
         uses: webfactory/ssh-agent@v0.7.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      # 4️⃣ Add server to known hosts
       - name: Add server to known hosts
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to server
+      # 5️⃣ Pull cache from server
+      - name: Pull Docker cache from server
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            docker pull tereaiqos-app:cache || true
+          "
+
+      # 6️⃣ Build Docker image with cache
+      - name: Build Docker image with cache
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
             cd /var/www/tereaiqos &&
-            git pull &&
-            docker compose down &&
-            docker compose up -d --build
+            docker buildx build \
+              --cache-from=tereaiqos-app:cache \
+              --tag tereaiqos-app:latest \
+              --tag tereaiqos-app:cache \
+              --push .  # push кэшированного образа
+          "
+
+      # 7️⃣ Deploy container
+      - name: Deploy container
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "
+            cd /var/www/tereaiqos &&
+            docker compose up -d --no-deps app
           "

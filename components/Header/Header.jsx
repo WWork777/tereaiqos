@@ -63,7 +63,7 @@ export default function Header() {
             height={100}
           />
           <div className="name">
-            <span>TereaIqos</span>
+            <span>qwe</span>
           </div>
         </Link>
         <div className="menu">

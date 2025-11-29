@@ -9,6 +9,7 @@ services:
       - NODE_ENV=production
       - VIRTUAL_HOST=tereaiqos.ru, www.tereaiqos.ru
       - LETSENCRYPT_HOST=tereaiqos.ru, www.tereaiqos.ru
+      - LETSENCRYPT_EMAIL=qwe@gmail.com
       - REDIRECT_www.tereaiqos.ru=tereaiqos.ru
     networks:
       - web

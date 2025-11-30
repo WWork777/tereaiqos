@@ -876,10 +876,7 @@ ${formattedCart}
                 </p>
               )}
             </div>
-            <button
-              onClick={handleExternalSubmit}
-              disabled={loading || selectedMethod === "pickup"}
-            >
+            <button onClick={handleExternalSubmit} disabled={loading}>
               {loading ? "Загрузка..." : "Заказать"}
             </button>
           </div>

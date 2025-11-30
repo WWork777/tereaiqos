@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies with legacy peer deps
         run: npm ci --legacy-peer-deps
-        
+
       - name: Add server to known hosts
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 

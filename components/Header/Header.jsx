@@ -68,6 +68,7 @@ export default function Header() {
         </Link>
         <div className="menu">
           <Link href="/products/iqos">Устройства</Link>
+          <Link href='/blog'>Блог</Link>
           <Link href="/products/terea">Стики</Link>
           <Link href="/products/devices">Аксессуары</Link>
           <Link href="/products">Каталог</Link>

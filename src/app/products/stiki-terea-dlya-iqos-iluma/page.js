@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 import ClientFilters from "./client";
 
 async function fetchItems() {
-  const res = await fetch("https://iluma-store.ru/api/products/getiqos", {
+  const res = await fetch("https://iluma-store.ru/api/products/getterea", {
     cache: "no-store",
   });
   if (!res.ok) throw new Error("Ошибка загрузки товаров");
@@ -10,19 +10,18 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title =
-    "Купить устройства IQOS ILUMA в tereaiqos с доставкой по Москве";
+  const title = "Купить стики Terea в TereaIqos с доставкой по России";
   return {
     title,
     description:
-      "Каталог устройств IQOS ILUMA с доставкой по Москве. Лучший выбор вкусов и брендов!",
+      "Купить стики Terea с доставкой. Лучший выбор вкусов и брендов!",
     alternates: {
-      canonical: `https://tereaiqos.ru/products/iqos`,
+      canonical: `https://tereaiqos.ru/products/stiki-terea-dlya-iqos-iluma`,
     },
     openGraph: {
-      title: `Купить устройства IQOS ILUMA в tereaiqos с доставкой по России`,
-      description: `Каталог устройствв IQOS ILUMA с доставкой по Москве. Лучший выбор вкусов и брендов!`,
-      url: `https://tereaiqos.ru/products/iqos`,
+      title: `Купить стики Terea в TereaIqos с доставкой по России`,
+      description: `Купить стики Terea с доставкой. Лучший выбор вкусов и брендов!`,
+      url: `https://tereaiqos.ru/products/stiki-terea-dlya-iqos-iluma`,
       images: [
         {
           url: `/favicon/web-app-manifest-512x512`,
@@ -44,7 +43,9 @@ export default async function Page() {
 
   return (
     <div className="products-container">
-      <h1 style={{ position: "absolute", zIndex: "-9999" }}>Iqos Iluma</h1>
+      <h1 className="page-title">
+        Купить стики Terea для IQOS ILUMA в Москве и России
+      </h1>
       <ClientFilters items={items} />
     </div>
   );

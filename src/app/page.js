@@ -10,38 +10,87 @@ import Reviews from "../../components/Home/Reviews/Reviews";
 import ModalManager from "../../components/ModalManager/ModalManager";
 
 export const metadata = {
-  title: "Купить стики Terea в Москве | TereaIqos",
+  title: "IQOS Iluma и стики Terea — купить в Москве с доставкой | Iluma Store",
   description:
-    "Оригинальные стики Terea для IQOS Iluma с доставкой по Москве – уникальные вкусы и индукционное нагревание",
+    "Купить IQOS Iluma и стики Terea с доставкой по Москве и России. Оригинальные устройства, акции, скидки и гарантия качества в Iluma Store.",
   alternates: {
-    canonical: `https://tereaiqos.ru`,
+    canonical: "https://tereaiqos.ru",
   },
   openGraph: {
-    title: `Купить стики Terea в Москве | TereaIqos`,
-    description: `Оригинальные стики Terea для IQOS Iluma с доставкой по Москве – уникальные вкусы и индукционное нагревание`,
-    url: `https://tereaiqos.ru`,
+    title:
+      "IQOS Iluma и стики Terea — купить в Москве с доставкой | Iluma Store",
+    description:
+      "Купить IQOS Iluma и стики Terea с доставкой по Москве и России. Оригинальные устройства, акции, скидки и гарантия качества в Iluma Store.",
+    url: "https://tereaiqos.ru",
+    type: "website",
     images: [
       {
-        url: `/favicon/web-app-manifest-512x512`,
-        alt: `Ilumastore`,
+        url: "https://tereaiqos.ru/favicon/og-image.png", // обязательно PNG или JPG
+        width: 512,
+        height: 512,
+        alt: "Iluma Store — IQOS Iluma и стики Terea",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IQOS Iluma и стики Terea — купить в Москве | Iluma Store",
+    description:
+      "Купить IQOS Iluma и стики Terea с доставкой по Москве и России. Оригинальные устройства, акции, скидки и гарантия качества.",
+    images: ["https://tereaiqos.ru/favicon/og-image.png"],
   },
 };
 
 export default function Home() {
   return (
     <>
-      <h1 className="hidden-h1">
-        Стики Terea для IQOS Iluma с доставкой по Москве
-      </h1>
-      <Hero />
-      <Poster />
-      <Preview />
-      <Exclusive />
-      <New />
-      <About />
-      <Reviews />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Store",
+            name: "Iluma Store",
+            url: "https://tereaiqos.ru",
+            description:
+              "Официальный магазин IQOS Iluma и стиков Terea с доставкой по России",
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "RU",
+              addressLocality: "Москва",
+            },
+          }),
+        }}
+      />
+      <main>
+        <section>
+          <Hero />
+        </section>
+        <section>
+          <Poster />
+        </section>
+        <section>
+          <Preview />
+        </section>
+
+        <section>
+          <Exclusive />
+        </section>
+
+        <section>
+          <New />
+        </section>
+
+        <section>
+          <About />
+        </section>
+
+        <section>
+          <Reviews />
+        </section>
+      </main>
+
+      {/* <ModalManager /> */}
     </>
   );
 }

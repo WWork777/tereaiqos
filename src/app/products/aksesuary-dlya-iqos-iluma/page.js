@@ -10,18 +10,16 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title =
-    "Купить аксессуары для IQOS ILUMA в TereaIqos с доставкой по Москве";
+  const title = "Аксессуары IQOS ILUMA";
   return {
     title,
-    description:
-      "Каталог аксессуаров для устройств IQOS ILUMA с доставкой по Москве. Лучший выбор вкусов и брендов!",
+    description: "Аксессуары для IQOS ILUMA и стиков TEREA. Всё для удобства.",
     alternates: {
       canonical: `https://tereaiqos.ru/products/aksesuary-dlya-iqos-iluma`,
     },
     openGraph: {
-      title: `Купить аксессуары для IQOS ILUMA в TereaIqos с доставкой по Москве`,
-      description: `Каталог аксессуаров для устройств IQOS ILUMA с доставкой по Москве. Лучший выбор вкусов и брендов!`,
+      title: `Аксессуары IQOS ILUMA`,
+      description: `Аксессуары для IQOS ILUMA и стиков TEREA. Всё для удобства.`,
       url: `https://tereaiqos.ru/products/aksesuary-dlya-iqos-iluma`,
       images: [
         {

@@ -10,17 +10,16 @@ import Reviews from "../../components/Home/Reviews/Reviews";
 import ModalManager from "../../components/ModalManager/ModalManager";
 
 export const metadata = {
-  title: "IQOS Iluma и стики Terea — купить в Москве с доставкой | Iluma Store",
+  title: "TEREA — стики для IQOS",
   description:
-    "Купить IQOS Iluma и стики Terea с доставкой по Москве и России. Оригинальные устройства, акции, скидки и гарантия качества в Iluma Store.",
+    "Стики TEREA для IQOS ILUMA. Оригинальная продукция, доставка по России.",
   alternates: {
     canonical: "https://tereaiqos.ru",
   },
   openGraph: {
-    title:
-      "IQOS Iluma и стики Terea — купить в Москве с доставкой | Iluma Store",
+    title: "TEREA — стики для IQOS",
     description:
-      "Купить IQOS Iluma и стики Terea с доставкой по Москве и России. Оригинальные устройства, акции, скидки и гарантия качества в Iluma Store.",
+      "Стики TEREA для IQOS ILUMA. Оригинальная продукция, доставка по России.",
     url: "https://tereaiqos.ru",
     type: "website",
     images: [
@@ -34,9 +33,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IQOS Iluma и стики Terea — купить в Москве | Iluma Store",
+    title: "TEREA — стики для IQOS",
     description:
-      "Купить IQOS Iluma и стики Terea с доставкой по Москве и России. Оригинальные устройства, акции, скидки и гарантия качества.",
+      "Стики TEREA для IQOS ILUMA. Оригинальная продукция, доставка по России.",
     images: ["https://tereaiqos.ru/favicon/og-image.png"],
   },
 };

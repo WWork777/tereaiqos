@@ -10,18 +10,17 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title =
-    "Купить устройства IQOS ILUMA в tereaiqos с доставкой по Москве";
+  const title = "IQOS ILUMA для стиков TEREA";
   return {
     title,
     description:
-      "Каталог устройств IQOS ILUMA с доставкой по Москве. Лучший выбор вкусов и брендов!",
+      "Устройства IQOS ILUMA для стиков TEREA. Оригинал, гарантия, наличие.",
     alternates: {
       canonical: `https://tereaiqos.ru/products/stiki-terea-dlya-iqos-iluma`,
     },
     openGraph: {
-      title: `Купить устройства IQOS ILUMA в tereaiqos с доставкой по России`,
-      description: `Каталог устройствв IQOS ILUMA с доставкой по Москве. Лучший выбор вкусов и брендов!`,
+      title: `IQOS ILUMA для стиков TEREA`,
+      description: `Устройства IQOS ILUMA для стиков TEREA. Оригинал, гарантия, наличие.`,
       url: `https://tereaiqos.ru/products/stiki-terea-dlya-iqos-iluma`,
       images: [
         {

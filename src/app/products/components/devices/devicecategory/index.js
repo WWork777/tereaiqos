@@ -60,7 +60,7 @@ const DeviceCategory = ({
       <div className="sort-container">
         <div className="mobile-categories">
           <Link
-            href="/products/stiki-terea-dlya-iqos-iluma"
+            href="/products/ustrojstva-iqos-iluma"
             className={`custom-button`}
           >
             Устройства

@@ -45,7 +45,7 @@ const PromotionModal = ({ allowClose = false, onClose }) => {
             &times;
           </button>
         )}
-        <a href="/products/stiki-terea-dlya-iqos-iluma?category=standart">
+        <a href="/products/ustrojstva-iqos-iluma?category=standart">
           <div className={styles.leftHalf}>
             <h2>Новогодние Скидки</h2>
             <p>

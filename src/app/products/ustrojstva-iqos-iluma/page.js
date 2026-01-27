@@ -44,13 +44,13 @@ export async function generateMetadata() {
     description:
       "Устройства IQOS ILUMA для стиков TEREA. Оригинал, гарантия, наличие.",
     alternates: {
-      canonical: `https://tereaiqos.ru/products/stiki-terea-dlya-iqos-iluma`,
+      canonical: `https://tereaiqos.ru/products/ustrojstva-iqos-iluma`,
     },
     openGraph: {
       title,
       description:
         "Устройства IQOS ILUMA для стиков TEREA. Оригинал, гарантия, наличие.",
-      url: `https://tereaiqos.ru/products/stiki-terea-dlya-iqos-iluma`,
+      url: `https://tereaiqos.ru/products/ustrojstva-iqos-iluma`,
       images: [
         {
           url: `https://tereaiqos.ru/favicon/web-app-manifest-512x512.png`,

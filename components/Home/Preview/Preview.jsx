@@ -7,7 +7,7 @@ export default function Preview() {
     <>
       <div className="preview">
         <div className="preview-card preview-column-one">
-          <Link href="/products/stiki-terea-dlya-iqos-iluma" className="">
+          <Link href="/products/ustrojstva-iqos-iluma" className="">
             <h3>iLuma</h3>
             <p>от 8 500 ₽</p>
             <Image

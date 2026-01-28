@@ -27,20 +27,19 @@ const Contacts = () => {
     <div className="contacts">
       <h1>Контакты</h1>
       <div className="adress">
-        <h3>Адрес</h3>
+        {/* <h3>Адрес</h3>
         <p>
           г.Москва - ул. Римского-Корсакова, 11, корп 8 (Ориентир: Пункт OZON)
-        </p>
+        </p> */}
         <p>
           Телефон: <Link href="tel:+7 (995) 153-80-19">+7 (995) 153-80-19</Link>
         </p>
-        <p>Время работы: с 10:00 до 23:00, без выходных</p>
+        <p>Время работы: с 10:00 до 20:00, без выходных</p>
       </div>
       <div className="social">
         <h3>Социальные сети</h3>
         <p>
-          Telegram:{" "}
-          <Link href="https://t.me/Ilumastore2025">@TereaIqos</Link>
+          Telegram: <Link href="https://t.me/Ilumastore2025">@TereaIqos</Link>
         </p>
         <p>
           Whatsapp:{" "}
@@ -49,7 +48,7 @@ const Contacts = () => {
           </Link>
         </p>
       </div>
-      <Map />
+      {/* <Map /> */}
     </div>
   );
 };

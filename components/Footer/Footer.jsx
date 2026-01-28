@@ -25,10 +25,10 @@ export default function Footer() {
               <Link href={"/policy"}>Политика конфиденциальности</Link>
             </div>
             <div className="adress">
-              <p>
+              {/* <p>
                 г.Москва - ул. Римского-Корсакова, 11, корп 8 <br></br>{" "}
                 Ориентир: Пункт OZON
-              </p>
+              </p> */}
               <p>Заказ от 1 блока! = 10 пачек</p>
               <p>2 пачки не продаем</p>
               <p>САМОВЫВОЗ ВРЕМЕННО НЕДОСТУПЕН</p>
@@ -40,7 +40,7 @@ export default function Footer() {
               <p>
                 Пн-пт: с 12:00 до 22:00
                 <br />
-                Сб-вс: с 12.00-21.00
+                Сб-вс: с 12.00-20.00
               </p>
             </div>
             <div className="links-contacts">

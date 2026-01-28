@@ -37,8 +37,7 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title =
-    "Купить устройства IQOS ILUMA в TereaIqos с доставкой по Москве";
+  const title = "Купить устройства IQOS ILUMA Мсоква";
 
   return {
     title,

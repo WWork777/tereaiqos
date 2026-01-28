@@ -37,7 +37,7 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title = "Аксессуары IQOS ILUMA";
+  const title = "Аксессуары IQOS ILUMA Мсоква";
 
   return {
     title,

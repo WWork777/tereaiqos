@@ -12,14 +12,14 @@ import SEOText from "../../components/Home/Seotext/seotext";
 import FAQ from "../../components/Home/FAQ/faq";
 
 export const metadata = {
-  title: "TEREA — стики для IQOS",
+  title: "TEREA — стики для IQOS Москва",
   description:
     "Стики TEREA для IQOS ILUMA. Оригинальная продукция, доставка по России.",
   alternates: {
     canonical: "https://tereaiqos.ru",
   },
   openGraph: {
-    title: "TEREA — стики для IQOS",
+    title: "TEREA — стики для IQOS Москва",
     description:
       "Стики TEREA для IQOS ILUMA. Оригинальная продукция, доставка по России.",
     url: "https://tereaiqos.ru",
@@ -35,7 +35,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TEREA — стики для IQOS",
+    title: "TEREA — стики для IQOS Москва",
     description:
       "Стики TEREA для IQOS ILUMA. Оригинальная продукция, доставка по России.",
     images: ["https://tereaiqos.ru/favicon/og-image.png"],

@@ -37,7 +37,7 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title = "Стики TEREA — купить";
+  const title = "Стики TEREA — купить Мсоква";
 
   return {
     title,

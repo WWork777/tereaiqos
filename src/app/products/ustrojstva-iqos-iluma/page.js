@@ -37,7 +37,7 @@ async function fetchItems() {
 }
 
 export async function generateMetadata() {
-  const title = "IQOS ILUMA для стиков TEREA";
+  const title = "IQOS ILUMA для стиков TEREA Мсоква";
 
   return {
     title,

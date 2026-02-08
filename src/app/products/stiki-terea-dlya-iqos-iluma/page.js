@@ -23,8 +23,8 @@ async function safeFetch(url, options = {}) {
 async function fetchItems() {
   const baseUrl =
     process.env.NODE_ENV === "production" && typeof window === "undefined"
-      ? "http://localhost:3006"
-      : "";
+      ? "https://iluma-store.ru"
+      : "http://localhost:3000";
 
   try {
     return await safeFetch(`${baseUrl}/api/products/getterea`, {

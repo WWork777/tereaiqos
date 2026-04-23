@@ -39,9 +39,6 @@ const Contacts = () => {
       <div className="social">
         <h3>Социальные сети</h3>
         <p>
-          Telegram: <Link href="https://t.me/Ilumastore2025">@TereaIqos</Link>
-        </p>
-        <p>
           Whatsapp:{" "}
           <Link href="https://api.whatsapp.com/send/?phone=79951538019&text=Здравствуйте%21+Хочу+оформить+заказ&type=phone_number&app_absent=0">
             +79951538019

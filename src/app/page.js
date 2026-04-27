@@ -10,6 +10,7 @@ import Reviews from "../../components/Home/Reviews/Reviews";
 import ModalManager from "../../components/ModalManager/ModalManager";
 import SEOText from "../../components/Home/Seotext/seotext";
 import FAQ from "../../components/Home/FAQ/faq";
+import BlockModal from "../../components/ModalManager/BlockModal/BlockModal";
 
 export const metadata = {
   title: "TEREA — стики для IQOS Москва",
@@ -98,6 +99,8 @@ export default function Home() {
           <Reviews />
         </section>
       </main>
+
+      <BlockModal />
 
       {/* <ModalManager /> */}
     </>

@@ -30,8 +30,7 @@ const ModalManager = () => {
 
   return (
     <>
-
-{/*   {currentStep === 1 && (
+      {/* {currentStep === 1 && (
         <BlockModal 
           allowClose={false} 
           onClose={handleCloseBlock}
